@@ -42,14 +42,14 @@ RUN \
 # Download and install Oracle JRE.
 # NOTE: This is needed only for the 7-Zip-JBinding workaround.
 RUN \
-    add-pkg --virtual build-dependencies curl && \
+    apk add --virtual build-dependencies curl && \
     mkdir /opt/jre && \
     curl -# -L ${JAVAJRE_URL} | tar -xz --strip 2 -C /opt/jre amazon-corretto-${JAVAJRE_VERSION}-linux-x64/jre && \
-    del-pkg build-dependencies
+    apk del build-dependencies
 
 # Install dependencies.
 RUN \
-    add-pkg \
+    apk add \
         # For the 7-Zip-JBinding workaround, Oracle JRE is needed instead of
         # the Alpine Linux's openjdk native package.
         # The libstdc++ package is also needed as part of the 7-Zip-JBinding
@@ -61,16 +61,6 @@ RUN \
         ffmpeg \
         # For rtmpdump tool.
         rtmpdump
-
-# Maximize only the main/initial window.
-RUN \
-    sed-patch 's/<application type="normal">/<application type="normal" title="JDownloader 2">/' \
-        /etc/xdg/openbox/rc.xml
-
-# Generate and install favicons.
-RUN \
-    APP_ICON_URL=https://raw.githubusercontent.com/jlesage/docker-templates/master/jlesage/images/jdownloader-2-icon.png && \
-    install_app_icon.sh "$APP_ICON_URL"
 
 # Add files.
 COPY rootfs/ /

@@ -83,4 +83,4 @@ LABEL \
       org.label-schema.description="Docker container for JDownloader 2" \
       org.label-schema.version="$DOCKER_IMAGE_VERSION" \
       org.label-schema.vcs-url="https://github.com/jlesage/docker-jdownloader-2" \
-      org.label-schema.schema-version="1.0" 
+      org.label-schema.schema-version="1.0"

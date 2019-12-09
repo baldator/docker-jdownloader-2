@@ -1,5 +1,5 @@
 # Docker container for JDownloader 2
-[![Docker Image Size](https://img.shields.io/microbadger/image-size/jlesage/jdownloader-2)](http://microbadger.com/#/images/jlesage/jdownloader-2) [![Build Status](https://drone.le-sage.com/api/badges/jlesage/docker-jdownloader-2/status.svg)](https://drone.le-sage.com/jlesage/docker-jdownloader-2) [![GitHub Release](https://img.shields.io/github/release/jlesage/docker-jdownloader-2.svg)](https://github.com/jlesage/docker-jdownloader-2/releases/latest) [![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://paypal.me/JocelynLeSage/0usd)
+[![Docker Image Size](https://img.shields.io/microbadger/image-size/baldator/jdownloader-2)](http://microbadger.com/#/images/baldator/jdownloader-2) [![Build Status](https://drone.le-sage.com/api/badges/baldator/docker-jdownloader-2/status.svg)](https://drone.le-sage.com/baldator/docker-jdownloader-2) [![GitHub Release](https://img.shields.io/github/release/baldator/docker-jdownloader-2.svg)](https://github.com/baldator/docker-jdownloader-2/releases/latest) [![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://paypal.me/JocelynLeSage/0usd)
 
 This is a Docker container for [JDownloader 2](http://jdownloader.org/).
 
@@ -7,7 +7,7 @@ The GUI of the application is accessed through a modern web browser (no installa
 
 ---
 
-[![JDownloader 2 logo](https://images.weserv.nl/?url=raw.githubusercontent.com/jlesage/docker-templates/master/jlesage/images/jdownloader-2-icon.png&w=200)](http://jdownloader.org/)[![JDownloader 2](https://dummyimage.com/400x110/ffffff/575757&text=JDownloader+2)](http://jdownloader.org/)
+[![JDownloader 2 logo](https://images.weserv.nl/?url=raw.githubusercontent.com/baldator/docker-templates/master/baldator/images/jdownloader-2-icon.png&w=200)](http://jdownloader.org/)[![JDownloader 2](https://dummyimage.com/400x110/ffffff/575757&text=JDownloader+2)](http://jdownloader.org/)
 
 JDownloader 2 is a free, open-source download management tool with a huge
 community of developers that makes downloading as easy and fast as it should be.
@@ -29,7 +29,7 @@ docker run -d \
     -p 5800:5800 \
     -v /docker/appdata/jdownloader-2:/config:rw \
     -v $HOME/Downloads:/output:rw \
-    jlesage/jdownloader-2
+    baldator/jdownloader-2
 ```
 
 Where:
@@ -40,13 +40,13 @@ Browse to `http://your-host-ip:5800` to access the JDownloader 2 GUI.
 
 ## Documentation
 
-Full documentation is available at https://github.com/jlesage/docker-jdownloader-2.
+Full documentation is available at https://github.com/baldator/docker-jdownloader-2.
 
 ## Support or Contact
 
 Having troubles with the container or have questions?  Please
 [create a new issue].
 
-For other great Dockerized applications, see https://jlesage.github.io/docker-apps.
+For other great Dockerized applications, see https://baldator.github.io/docker-apps.
 
-[create a new issue]: https://github.com/jlesage/docker-jdownloader-2/issues
+[create a new issue]: https://github.com/baldator/docker-jdownloader-2/issues

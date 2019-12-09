@@ -67,20 +67,3 @@ steps:
   when:
     ref:
     - refs/tags/v*
-
-- name: notification
-  image: plugins/pushover
-  settings:
-    message: "{{ repo.owner }}/{{ repo.name }}#{{ truncate build.commit 8 }} ({{ build.branch }}) by {{ build.author }} - {{ build.message }}"
-    token:
-      from_secret: pushover_token
-    user:
-      from_secret: pushover_user
-  failure: ignore
-  when:
-    event:
-      exclude:
-      - pull_request
-    status:
-    - success
-    - failure

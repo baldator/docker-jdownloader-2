@@ -1,5 +1,5 @@
 # Docker container for JDownloader 2
-[![Docker Image Size](https://img.shields.io/microbadger/image-size/jlesage/jdownloader-2)](http://microbadger.com/#/images/jlesage/jdownloader-2) [![Build Status](https://drone.le-sage.com/api/badges/jlesage/docker-jdownloader-2/status.svg)](https://drone.le-sage.com/jlesage/docker-jdownloader-2) [![GitHub Release](https://img.shields.io/github/release/jlesage/docker-jdownloader-2.svg)](https://github.com/jlesage/docker-jdownloader-2/releases/latest) [![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://paypal.me/JocelynLeSage/0usd)
+[![Docker Image Size](https://img.shields.io/microbadger/image-size/baldator/jdownloader-2)](http://microbadger.com/#/images/baldator/jdownloader-2) [![Build Status](https://drone.le-sage.com/api/badges/baldator/docker-jdownloader-2/status.svg)](https://drone.le-sage.com/baldator/docker-jdownloader-2) [![GitHub Release](https://img.shields.io/github/release/baldator/docker-jdownloader-2.svg)](https://github.com/baldator/docker-jdownloader-2/releases/latest) [![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://paypal.me/JocelynLeSage/0usd) [![Build Status](https://cloud.drone.io/api/badges/baldator/docker-jdownloader-2/status.svg)](https://cloud.drone.io/baldator/docker-jdownloader-2)
 
 This is a Docker container for [JDownloader 2](http://jdownloader.org/).
 
@@ -7,7 +7,7 @@ The GUI of the application is accessed through a modern web browser (no installa
 
 ---
 
-[![JDownloader 2 logo](https://images.weserv.nl/?url=raw.githubusercontent.com/jlesage/docker-templates/master/jlesage/images/jdownloader-2-icon.png&w=200)](http://jdownloader.org/)[![JDownloader 2](https://dummyimage.com/400x110/ffffff/575757&text=JDownloader+2)](http://jdownloader.org/)
+[![JDownloader 2 logo](https://images.weserv.nl/?url=raw.githubusercontent.com/baldator/docker-templates/master/baldator/images/jdownloader-2-icon.png&w=200)](http://jdownloader.org/)[![JDownloader 2](https://dummyimage.com/400x110/ffffff/575757&text=JDownloader+2)](http://jdownloader.org/)
 
 JDownloader 2 is a free, open-source download management tool with a huge
 community of developers that makes downloading as easy and fast as it should be.
@@ -58,7 +58,7 @@ docker run -d \
     -p 5800:5800 \
     -v /docker/appdata/jdownloader-2:/config:rw \
     -v $HOME/Downloads:/output:rw \
-    jlesage/jdownloader-2
+    baldator/jdownloader-2
 ```
 
 Where:
@@ -75,7 +75,7 @@ docker run [-d] \
     [-e <VARIABLE_NAME>=<VALUE>]... \
     [-v <HOST_DIR>:<CONTAINER_DIR>[:PERMISSIONS]]... \
     [-p <HOST_PORT>:<CONTAINER_PORT>]... \
-    jlesage/jdownloader-2
+    baldator/jdownloader-2
 ```
 | Parameter | Description |
 |-----------|-------------|
@@ -168,7 +168,7 @@ ports are part of the example.
 version: '3'
 services:
   jdownloader-2:
-    image: jlesage/jdownloader-2
+    image: baldator/jdownloader-2
     build: .
     ports:
       - "5800:5800"
@@ -184,7 +184,7 @@ the Docker image, the following steps can be followed:
 
   1. Fetch the latest image:
 ```
-docker pull jlesage/jdownloader-2
+docker pull baldator/jdownloader-2
 ```
   2. Stop the container:
 ```
@@ -203,7 +203,7 @@ container image.
 
   1.  Open the *Docker* application.
   2.  Click on *Registry* in the left pane.
-  3.  In the search bar, type the name of the container (`jlesage/jdownloader-2`).
+  3.  In the search bar, type the name of the container (`baldator/jdownloader-2`).
   4.  Select the image, click *Download* and then choose the `latest` tag.
   5.  Wait for the download to complete.  A  notification will appear once done.
   6.  Click on *Container* in the left pane.
@@ -293,7 +293,7 @@ ReadExact: Socket error while reading
 However, for your convienence, an unoffical and working version is provided
 here:
 
-https://github.com/jlesage/docker-baseimage-gui/raw/master/tools/ssvnc_windows_only-1.0.30-r1.zip
+https://github.com/baldator/docker-baseimage-gui/raw/master/tools/ssvnc_windows_only-1.0.30-r1.zip
 
 The only difference with the offical package is that the bundled version of
 `stunnel` has been upgraded to version `5.49`, which fixes the connection
@@ -494,6 +494,4 @@ JDownloader via the *MyJDownloader* service.
 Having troubles with the container or have questions?  Please
 [create a new issue].
 
-For other great Dockerized applications, see https://jlesage.github.io/docker-apps.
-
-[create a new issue]: https://github.com/jlesage/docker-jdownloader-2/issues
+[create a new issue]: https://github.com/baldator/docker-jdownloader-2/issues

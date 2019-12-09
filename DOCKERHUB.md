@@ -1,5 +1,5 @@
 # Docker container for JDownloader 2
-[![Docker Image Size](https://img.shields.io/microbadger/image-size/baldator/jdownloader-2)](http://microbadger.com/#/images/baldator/jdownloader-2) [![Build Status](https://drone.le-sage.com/api/badges/baldator/docker-jdownloader-2/status.svg)](https://drone.le-sage.com/baldator/docker-jdownloader-2) [![GitHub Release](https://img.shields.io/github/release/baldator/docker-jdownloader-2.svg)](https://github.com/baldator/docker-jdownloader-2/releases/latest)
+[![Build Status](https://cloud.drone.io/api/badges/baldator/docker-jdownloader-2/status.svg)](https://cloud.drone.io/baldator/docker-jdownloader-2)
 
 This is a Docker container for [JDownloader 2](http://jdownloader.org/).
 

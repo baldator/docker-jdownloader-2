@@ -85,4 +85,4 @@ LABEL \
       org.label-schema.vcs-url="https://github.com/jlesage/docker-jdownloader-2" \
       org.label-schema.schema-version="1.0"
 
-ENTRYPOINT /startapp.sh
+ENTRYPOINT /rootfs/startapp.sh
